@@ -24,7 +24,7 @@ it('should return array', (done) => {
       //.expect(404)
       .expect((res) => {
 
-        expect(res.body).toBe.arrayContaining('twenty')
+        expect(res.body).toContain({name:  'twenty', age: 20} )
 
       })
       .end(done);
